@@ -1,0 +1,46 @@
+﻿html {
+    background-color: black;
+}
+
+body {
+    margin-left: 10%;
+    margin-left: 10%;
+    width: 80%;
+    background-color: darkgreen;
+    border-radius: 25px;
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+h1 {
+    text-align: center;
+    color:lightyellow;
+}
+
+@keyframes example {
+    from {
+        background-color: greenyellow;
+        color:darkgreen
+    }
+
+    to {
+        background-color: darkgreen;
+        color:lightyellow;
+    }
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: darkgreen;
+    padding: .5%;
+    margin-top: .5%;
+}
+
+#tiger img {width:50%; height:50%; float:right;}
+#alpha img {width:50%; height:50%; float:right;}
+#mountrush img {width:25%; height:25%; position:absolute; top:10%;}

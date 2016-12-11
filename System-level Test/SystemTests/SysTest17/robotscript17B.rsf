@@ -1,0 +1,80 @@
+-- Commands
+--  mouse_move x,y
+--  mouse_down
+--  mouse_up
+--  mouse_press x,y     -combines a mouse move with a mouse down and up
+--  press_key keyname   -depress a key
+--  release_key keyname -release a key
+--  type_key keyname    -depress and release a key
+--  type_string string  -types an string of single characters, cannot 
+--				-place control character in here
+--
+-- TEST CASE 17B: verify the tasklist window operates properly
+--
+
+-- switch to Tasklist Window
+press_key alt
+type_key tab
+release_key alt
+
+-- close the window
+press_key alt
+type_key D
+release_key alt
+
+-- focus should now be in Scheduler Window
+-- open the settings dialog
+press_key alt
+type_key F
+release_key alt
+type_key t
+wait 900
+
+-- select the tasklist tab
+type_key tab
+type_key tab
+type_key right
+type_key right
+
+-- move to the checkbox and check it
+type_key tab
+type_key space
+wait 200
+
+-- the tasklist window appears
+
+-- change focus to settings dialog
+press_key alt
+type_key tab
+release_key alt
+
+-- create a report
+press_key alt
+type_key D
+release_key alt
+wait 200
+
+-- close the settings dialog
+press_key alt
+type_key O
+release_key alt
+wait 200
+
+-- focus will be on Tasklist Window
+-- attempt to close the window
+press_key alt
+type_key D
+release_key alt
+
+-- switch back to Scheduler Window
+press_key alt
+type_key tab
+release_key alt
+
+-- From the File menu, choose Exit
+wait 500
+press_key alt
+type_key f
+release_key alt
+type_key x
+

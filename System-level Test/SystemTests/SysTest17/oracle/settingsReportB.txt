@@ -1,0 +1,7 @@
+	 Settings Report
+
+Monday  8:00
+Show TaskList = true
+Manager	Mgr	-16776961
+Baker	Bkr	-256
+Cashier	Csh	-16711936
