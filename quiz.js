@@ -1,6 +1,6 @@
 /*
 	Web Quiz Game Engine v0.1 by
-	SERGIO GARCIA <gar13065@byui.edu>
+	Robert Austin <aus10004@byui.edu>
 */
 	var score = 0;
 	var questions = 0;
