@@ -10,7 +10,7 @@ PrintWriter pw=res.getWriter();//get the stream to write the data
   
 //writing html in the stream  
 pw.println("<html><body>");  
-pw.println("Welcome to servlet");  
+pw.println("Welcome to foosball");  
 pw.println("</body></html>");  
   
 pw.close();//closing the stream  
